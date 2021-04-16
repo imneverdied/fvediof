@@ -22,6 +22,7 @@
 <script>
   var play_NAME = [];
 	var first_EPISO = [];
+  //json檔取得的所有NAME => ALL_NAME
 	var ALL_NAME = [];
 	var ALL_RNAME = [];
 	var ALL_NBRTYPE = [];
@@ -79,7 +80,8 @@
 
 
 	function Fsearch(value) {
-		//定義
+	
+    //現在選擇的影集 => F_NAME
 		var F_NAME = [];
 		var F_RNAME = [];
 		var F_NBRTYPE = [];
@@ -95,7 +97,7 @@
 			for(j=0;j<ALL_NAME.length;j++)
 				if (value == ALL_NAME[j]) //過濾資料
 				{
-					//取得所有欄位資料
+					//取得現在選擇的影集所有欄位資料
 					F_NAME.push(ALL_NAME[j]);
 					F_RNAME.push(ALL_RNAME[j]);
 					F_NBRTYPE.push(ALL_NBRTYPE[j]);
