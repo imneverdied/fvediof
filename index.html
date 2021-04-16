@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 </head>
-<label id="TEXT">自動載入json更新下拉選單</label></br>
+<label id="load">load</label></br>
 <select id="TEXT3" onchange="Fsearch(value)" style="background-color:Orange;">下拉選單</select>
 <select id="TEXT4" onchange="eSLECT(value)" style="background-color:yellow;">集數選單</select></br>
 <input type="text" id="SELECT"></br>
@@ -31,7 +31,7 @@
 
 	$(document).ready(function () {
 
-
+    startTime();
 		$.ajaxSetup({ cache: false });
 		$.getJSON("https://imneverdied.github.io/jmespath/example.json", function (data) {
 			Gdata = data;
@@ -137,6 +137,40 @@
 		});
 
 
+
+function startTime(){
+  var today = new Date();
+  var ss = today.getSeconds();
+  ss = checkTime(ss);
+
+
+  var timeoutId = setTimeout(startTime, 500);
+
+}
+
+
+
+function checkTime(i){
+  var TT ="🌑";
+
+  for(j= 0 ; j<i ;j++)
+  {
+      if(TT.length <30){
+     if(TT =="🌑")TT = "🌒";
+     else if(TT =="🌒")TT = "🌓";
+     else if(TT =="🌓")TT = "🌔";
+     else if(TT =="🌔")TT = "🌕";
+     else if(TT =="🌕")TT = "🌖";
+     else if(TT =="🌖")TT = "🌗";
+     else if(TT =="🌗")TT = "🌘";
+     else if(TT =="🌘")TT = "🌑";
+        
+      }
+
+  }
+
+  $(load).text(TT);
+}
 
 
 </script>
