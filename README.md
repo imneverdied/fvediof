@@ -1,3 +1,4 @@
 # fvediof
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/fvediof)
+[Create from StackBlitz ](https://stackblitz.com/edit/fvediof)
+githubDEMO https://imneverdied.github.io/fvediof/
