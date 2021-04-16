@@ -18,7 +18,7 @@
 <script src="https://imneverdied.github.io/jmespath/jmespath.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-	var play_NAME = [];
+  var play_NAME = [];
 	var first_EPISO = [];
 	var ALL_NAME = [];
 	var ALL_RNAME = [];
@@ -103,7 +103,8 @@
 					F_EXT.push(ALL_EXT[j]);
 					F_CC.push(ALL_CC[j]);
 
-					var strRTN = F_NAME[0] + F_NBRTYPE[0];
+					//var strRTN = F_NAME[0] + F_NBRTYPE[0];
+          var strRTN = F_NAME[0] + "第一集";
 					$(NAME_NOW).text(F_NAME[0]);
 					$(TYPE_NOW).text(F_NBRTYPE[0]);
 					$(TEXT2).text(strRTN);
